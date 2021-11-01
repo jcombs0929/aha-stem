@@ -1,0 +1,80 @@
+@import "../../sass/mixins";
+
+header {
+  background-color: $red;
+  height: 8px;
+  width: 100%;
+  display: block;
+}
+.nav-logo-container {
+  position: absolute;
+  top: 0;
+  padding: 0.6rem 1rem;
+  margin-left: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #efefef;
+
+  img {
+    height: fit-content;
+    height: 80px;
+
+    &:last-child {
+      height: 70px;
+      margin-left: 1.25rem;
+    }
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .nav-links {
+    padding: 0.6rem 1rem;
+    a {
+      display: inline-block;
+      padding: 1rem 0;
+      margin: 0 1.5rem;
+      color: gray;
+      text-decoration: none;
+      margin-right: 0.5rem;
+      transition: 0.3s ease;
+
+      &::after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 4px;
+        // background: transparent;
+        width: 0;
+        transform: translateY(10px);
+        // opacity: 0;
+        transition: 0.3s ease;
+      }
+
+      &:hover:not(.red-btn) {
+        // border-bottom: 4px solid $red;
+        color: $red;
+        &::after {
+          // opacity: 1;
+          background: $red;
+          width: 100%;
+        }
+      }
+
+      &.red-btn {
+        background-color: $red;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

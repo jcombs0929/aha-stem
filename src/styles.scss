@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://use.typekit.net/eog7ubg.css");
+@import "./sass/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.5;
+  font-family: "ingra", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-weight: 400;
+  @media (min-width: 32em) {
+    font-size: calc(16px + 8 * ((100vw - 500px) / 1500));
+  }
+  @media (min-width: 62.5em) {
+    font-size: calc(13px + 8 * ((100vw - 500px) / 1500));
+  }
+  @media (min-width: 100em) {
+    font-size: 18px;
+  }
+}
