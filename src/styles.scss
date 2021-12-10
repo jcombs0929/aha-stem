@@ -73,3 +73,45 @@ h6 {
 .cyan {
   color: $blue;
 }
+
+// BUTTONS START
+
+.btn {
+  display: block;
+  padding: 0.8rem 2rem;
+  // border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid;
+  width: 100%;
+  margin: 1.5rem 0;
+  text-decoration: none;
+  transition: 0.2s all ease-in-out;
+
+  &__green {
+    border-color: $green;
+    color: $green;
+
+    &:hover {
+      background-color: $green;
+      color: #fff;
+    }
+  }
+  &__orange {
+    border-color: $orange;
+    color: $orange;
+
+    &:hover {
+      background-color: $orange;
+      color: #fff;
+    }
+  }
+  &__purple {
+    border-color: $purple;
+    color: $purple;
+
+    &:hover {
+      background-color: $purple;
+      color: #fff;
+    }
+  }
+}

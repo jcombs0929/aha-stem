@@ -1,0 +1,29 @@
+@import "../../sass/mixins";
+
+.events {
+  text-align: center;
+  margin: 3% 20px;
+
+  h1 {
+    font-weight: 400;
+    color: $red;
+  }
+}
+
+.event {
+  color: $red;
+  max-width: 400px;
+  margin: 4% auto;
+  &__icon {
+    width: 70px;
+    margin-bottom: 0.8rem;
+  }
+  &__title {
+  }
+  &__date-time {
+    font-size: 1.2rem;
+  }
+  &__location {
+    font-size: 0.9rem;
+  }
+}

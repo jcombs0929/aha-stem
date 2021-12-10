@@ -1,7 +1,7 @@
 @import "../../sass/mixins";
 
 .frontpage-content {
-  max-width: 840px;
+  max-width: 820px;
   margin: 4rem auto;
   text-align: center;
   line-height: 1.8;
@@ -23,5 +23,28 @@
   color: $black;
   p:first-child {
     margin-bottom: 1rem;
+  }
+}
+
+.join {
+  background-color: $red;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  font-weight: 400;
+
+  &:hover {
+    background-color: red;
+  }
+
+  &.donate {
+    background-color: $green;
+    &:hover {
+      background-color: limegreen;
+    }
   }
 }
