@@ -1,0 +1,41 @@
+@import "../../../sass/_mixins.scss";
+
+.hero {
+  height: 70vh;
+  overflow: hidden;
+  background-color: $orange;
+  color: white;
+  background: url(../../../assets/images/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20%;
+  //   &__img {
+  //     // width: 100%;
+  //     height: 100%;
+
+  //     opacity: 0.7;
+  //   }
+
+  &__content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto 10% 0;
+    margin-top: 5vw;
+    animation: fade-in 1s 0.5s forwards;
+  }
+
+  &__text {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  }
+  &__header {
+    font-size: 4rem;
+  }
+  &__caption {
+    font-size: 1.5rem;
+  }
+}

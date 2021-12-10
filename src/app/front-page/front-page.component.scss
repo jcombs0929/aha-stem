@@ -1,0 +1,27 @@
+@import "../../sass/mixins";
+
+.frontpage-content {
+  max-width: 840px;
+  margin: 4rem auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.icon-set {
+  //   width: 100%;
+  //   max-height: 60px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 60px;
+  margin: 0 12px;
+}
+
+.frontpage-text {
+  font-size: 1.1rem;
+  color: $black;
+  p:first-child {
+    margin-bottom: 1rem;
+  }
+}
