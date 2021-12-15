@@ -1,21 +1,31 @@
 @import "../../sass/mixins";
 
+h1 {
+  font-weight: 400;
+  color: $red;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+
 .events {
   text-align: center;
-  margin: 3% 20px;
-
-  h1 {
-    font-weight: 400;
-    color: $red;
-  }
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .event {
   color: $red;
-  max-width: 400px;
-  margin: 4% auto;
+  width: 400px;
+  padding: 1rem;
+  @media (max-width: 768px) {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+  }
   &__icon {
-    width: 70px;
+    width: 80px;
     margin-bottom: 0.8rem;
   }
   &__title {

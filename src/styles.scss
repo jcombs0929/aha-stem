@@ -74,7 +74,15 @@ h6 {
   color: $blue;
 }
 
-// BUTTONS START
+/* –––– LAYOUT START –––– */
+
+.container {
+  padding: 1.5rem;
+}
+
+/* –––– LAYOUT END –––– */
+
+/* –––– BUTTONS START –––– */
 
 .btn {
   display: block;
@@ -115,3 +123,5 @@ h6 {
     }
   }
 }
+
+/* –––– BUTTONS END –––– */
