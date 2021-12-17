@@ -1,0 +1,49 @@
+[
+  {
+    "section": [
+      {
+        "newsEvents": [
+          {
+            "id": 1,
+            "name": "STEM Goes Red Conference",
+            "subtitle": "",
+            "date": "October 19, 2022",
+            "time": "1:00PM - 5:00PM",
+            "description": "",
+            "location": "The Omni Hotel",
+            "city": "Dallas",
+            "state": "TX",
+            "icon": "icon",
+            "type": "register"
+          },
+          {
+            "id": 2,
+            "name": "Mentor/Mentee Interactions",
+            "subtitle": "",
+            "date": "October 19, 2022",
+            "time": "1:00PM - 5:00PM",
+            "description": "Real-life experience in a STEM career Mentor and Mentee Interactions",
+            "location": "Pi Day - March 14, 2022",
+            "city": "",
+            "state": "",
+            "icon": "mentor-icon",
+            "type": "info"
+          },
+          {
+            "id": 3,
+            "name": "Steering Committee Meeting",
+            "subtitle": "You're My Why",
+            "date": "November 14, 2022",
+            "time": "2:00PM - 4:00PM",
+            "description": "Provide expertise in producing an impactful and educational program.",
+            "location": "",
+            "city": "",
+            "state": "",
+            "icon": "committee-icon",
+            "type": "info"
+          }
+        ]
+      }
+    ]
+  }
+]

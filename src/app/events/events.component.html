@@ -1,7 +1,32 @@
 <div class="container">
   <h1>News &amp; Events</h1>
   <div class="events">
-    <div class="event">
+    <div class="event" *ngFor="let event of newsEvents">
+      <img
+        src="../../assets/images/{{ event.icon }}.svg"
+        alt="{{ event.icon }} Icon"
+        class="event__icon"
+      />
+      <div class="text">
+        <h2 class="event__title">{{ event.title }}</h2>
+        <div class="event__date-time">{{ event.date }} • {{ event.time }}</div>
+        <div
+          class="event__location"
+          *ngIf="event.location && event.location != ''"
+        >
+          {{ event.location }} • {{ event.city }}, {{ event.state }}
+        </div>
+        <div class="event__location">{{ event.description }}</div>
+      </div>
+
+      <a
+        routerLink="events"
+        class="btn btn__{{ event.id % 2 === 0 ? 'purple' : 'orange' }}"
+        >{{ event.type === "register" ? "Register Here" : "Learn More" }}</a
+      >
+    </div>
+
+    <!-- <div class="event">
       <img
         src="../../assets/images/icon.svg"
         alt="STEM Icon"
@@ -40,6 +65,6 @@
         Provide expertise in producing an impactful and educational program.
       </div>
       <a routerLink="events" class="btn btn__purple">Learn More</a>
-    </div>
+    </div> -->
   </div>
 </div>
