@@ -5,20 +5,34 @@
   overflow: hidden;
   // background-color: $orange;
   color: white;
-  background: linear-gradient(rgba(#f08800, 0.6), rgba(#f08800, 0.6)),
-    url(../../../assets/images/img-1.jpg) no-repeat center;
+
   background-size: cover;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 20%;
-  //   &__img {
-  //     // width: 100%;
-  //     height: 100%;
 
-  //     opacity: 0.7;
-  //   }
+  &.Scientists {
+    background: linear-gradient(rgba($orange, 0.6), rgba($orange, 0.6)),
+      url(../../../assets/images/img-1.jpg) no-repeat center;
+  }
+  &.Technologists {
+    background: linear-gradient(rgba($green, 0.6), rgba($green, 0.6)),
+      url(../../../assets/images/img-1.jpg) no-repeat center;
+  }
+  &.Engineers {
+    background: linear-gradient(rgba($purple, 0.6), rgba($purple, 0.6)),
+      url(../../../assets/images/img-1.jpg) no-repeat center;
+  }
+  &.Mathematicians {
+    background: linear-gradient(rgba($blue, 0.6), rgba($blue, 0.6)),
+      url(../../../assets/images/img-1.jpg) no-repeat center;
+  }
+  &.You {
+    background: linear-gradient(rgba($red, 0.6), rgba($red, 0.6)),
+      url(../../../assets/images/img-1.jpg) no-repeat center;
+  }
 
   &__content {
     max-width: 1000px;
