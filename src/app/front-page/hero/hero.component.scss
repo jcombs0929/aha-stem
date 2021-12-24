@@ -1,14 +1,13 @@
 @import "../../../sass/_mixins.scss";
 
 .hero {
-  height: 70vh;
+  height: 72vh;
   overflow: hidden;
-  background-color: $orange;
+  // background-color: $orange;
   color: white;
-  background: url(../../../assets/images/img-1.jpg);
+  background: linear-gradient(rgba(#f08800, 0.7), rgba(#f08800, 0.7)),
+    url(../../../assets/images/img-1.jpg) no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -33,7 +32,11 @@
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
   }
   &__header {
-    font-size: 4rem;
+    font-weight: 300;
+    font-size: 5rem;
+    span {
+      font-weight: 700;
+    }
   }
   &__caption {
     font-size: 1.5rem;
