@@ -1,10 +1,100 @@
+@import "../../sass/mixins";
+
 footer {
   background-color: #e6eaed;
 
-  .footer-content {
+  .footer {
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 1366px;
     margin: 0 auto;
+    display: flex;
+
+    &__logo {
+      margin-bottom: 0.5rem;
+    }
+
+    &__col {
+      flex: 1;
+      padding: 0 1rem;
+
+      h3 {
+        font-weight: 500;
+      }
+
+      ul li {
+        list-style: none;
+        padding: 0.1rem 0 0.1rem 0.25rem;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: ">";
+          margin-right: 0.6rem;
+        }
+        a {
+          text-decoration: none;
+          font-size: 0.85rem;
+          color: $black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &.contact {
+        h3 {
+          color: $red;
+        }
+        p {
+          font-size: 0.8rem;
+          margin-bottom: 1rem;
+
+          a {
+            text-decoration: none;
+            color: $black;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &.about {
+        h3 {
+          color: $orange;
+        }
+        ul li::before {
+          color: $orange;
+        }
+      }
+
+      &.our-sites {
+        h3 {
+          color: $green;
+        }
+        ul li::before {
+          color: $green;
+        }
+      }
+
+      &.take-action {
+        h3 {
+          color: $purple;
+        }
+        ul li::before {
+          color: $purple;
+        }
+      }
+
+      &.communities {
+        h3 {
+          color: $blue;
+        }
+        ul li::before {
+          color: $blue;
+        }
+      }
+    }
   }
 
   .social {
@@ -12,6 +102,19 @@ footer {
     text-align: center;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+
+    a {
+      margin: 0 0.5rem;
+
+      img {
+        fill: $black;
+        width: 20px;
+        transition: 0.2s all ease-in-out;
+        &:hover {
+          fill: $red;
+        }
+      }
+    }
   }
 
   .copyright {
