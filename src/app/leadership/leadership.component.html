@@ -1,1 +1,27 @@
-<p>leadership works!</p>
+<div class="leadership-container">
+  <section>
+    <h1 class="page-title">STEM Initiative's Leadership</h1>
+  </section>
+  <div class="leadership">
+    <div class="leader" *ngFor="let leader of leadership">
+      <div class="leader__header">
+        <div class="leader__exp">
+          <span class="years">{{ leader.experience }}</span>
+          <span>years with STEM Initiative</span>
+        </div>
+        <div class="leader__bio">
+          <a href="#">Bio</a>
+        </div>
+      </div>
+      <div class="leader__img">
+        <img src="{{ leader.photo }}" alt="{{ leader.name }}" />
+      </div>
+      <div class="leader__name">
+        <h2>{{ leader.name }}</h2>
+        <p>
+          <em>{{ leader.title }}</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
