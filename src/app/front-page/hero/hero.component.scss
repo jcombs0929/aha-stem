@@ -1,7 +1,7 @@
 @import "../../../sass/_mixins.scss";
 
 .hero {
-  height: 90vh;
+  height: 72vh;
   overflow: hidden;
   // background-color: $orange;
   color: white;
@@ -16,22 +16,27 @@
   &.Scientists {
     background: linear-gradient(rgba($orange, 0.6), rgba($orange, 0.6)),
       url(../../../assets/images/img-1.jpg) no-repeat center;
+    background-size: cover;
   }
   &.Technologists {
     background: linear-gradient(rgba($green, 0.6), rgba($green, 0.6)),
-      url(../../../assets/images/img-1.jpg) no-repeat center;
+      url(../../../assets/images/img-6.jpg) no-repeat center;
+    background-size: cover;
   }
   &.Engineers {
     background: linear-gradient(rgba($purple, 0.6), rgba($purple, 0.6)),
-      url(../../../assets/images/img-1.jpg) no-repeat center;
+      url(../../../assets/images/img-4.jpg) no-repeat center;
+    background-size: cover;
   }
   &.Mathematicians {
     background: linear-gradient(rgba($blue, 0.6), rgba($blue, 0.6)),
-      url(../../../assets/images/img-1.jpg) no-repeat center;
+      url(../../../assets/images/img-5.jpg) no-repeat center;
+    background-size: cover;
   }
   &.You {
     background: linear-gradient(rgba($red, 0.6), rgba($red, 0.6)),
-      url(../../../assets/images/img-1.jpg) no-repeat center;
+      url(../../../assets/images/img-2.jpg) no-repeat center;
+    background-size: cover;
   }
 
   &__content {

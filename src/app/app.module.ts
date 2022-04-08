@@ -14,6 +14,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { EventsComponent } from "./events/events.component";
 import { HeroComponent } from "./front-page/hero/hero.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     EventsComponent,
     HeroComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, ModalModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 })
