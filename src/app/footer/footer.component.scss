@@ -18,7 +18,12 @@ footer {
       padding: 0 1rem;
 
       h3 {
-        font-weight: 500;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      ul {
+        padding-left: 0;
       }
 
       ul li {
@@ -33,7 +38,7 @@ footer {
         }
         a {
           text-decoration: none;
-          font-size: 0.85rem;
+          font-size: 0.75rem;
           color: $black;
           &:hover {
             text-decoration: underline;
@@ -61,7 +66,7 @@ footer {
 
       &.about {
         h3 {
-          color: $orange;
+          color: $black;
         }
         ul li::before {
           color: $orange;
@@ -70,7 +75,7 @@ footer {
 
       &.our-sites {
         h3 {
-          color: $green;
+          color: $black;
         }
         ul li::before {
           color: $green;
@@ -79,7 +84,7 @@ footer {
 
       &.take-action {
         h3 {
-          color: $purple;
+          color: $black;
         }
         ul li::before {
           color: $purple;
@@ -88,7 +93,7 @@ footer {
 
       &.communities {
         h3 {
-          color: $blue;
+          color: $black;
         }
         ul li::before {
           color: $blue;

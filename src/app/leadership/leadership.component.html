@@ -3,15 +3,17 @@
     <h1 class="page-title">STEM Initiative's Leadership</h1>
   </section>
   <div class="leadership">
-    <div class="leader" *ngFor="let leader of leadership">
+    <div
+      class="leader"
+      *ngFor="let leader of leadership"
+      (click)="openModal(bio)"
+    >
       <div class="leader__header">
         <div class="leader__exp">
           <span class="years">{{ leader.experience }}</span>
           <span>years with STEM Initiative</span>
         </div>
-        <div class="leader__bio">
-          <a href="#">Bio</a>
-        </div>
+        <div class="leader__bio">Bio</div>
       </div>
       <div class="leader__img">
         <img src="{{ leader.photo }}" alt="{{ leader.name }}" />
@@ -22,6 +24,23 @@
           <em>{{ leader.title }}</em>
         </p>
       </div>
+
+      <ng-template #bio>
+        <div class="modal-header" modal-lg>
+          <h4 class="modal-title pull-left">{{ leader.name }}</h4>
+          <button
+            type="button"
+            class="close btn-close pull-right"
+            aria-label="Close"
+            (click)="modalRef?.hide()"
+          >
+            <span aria-hidden="true" class="visually-hidden">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" innerHTML="{{ leader.bio }}">
+          <!-- {{ leader.bio }} -->
+        </div>
+      </ng-template>
     </div>
   </div>
 </div>
