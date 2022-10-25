@@ -1,1 +1,115 @@
-<p>volunteer works!</p>
+<div class="container">
+  <div class="row">
+    <div class="header col-md-8 mb-3">
+      <h1>Volunteer Opportunities for Everyone</h1>
+      <p>
+        The STEM Goes Red North Texas depends on the time and talent of
+        volunteers to help us create a better future by nurturing the bright
+        minds of young people today.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <h2>What Are Your Volunteer Interests?</h2>
+      <p>Review the opportunities and select as many as you'd like.</p>
+    </div>
+  </div>
+
+  <div class="row volunteer-options">
+    <div class="col-4" *ngFor="let option of volunteerOptions">
+      <h4 class="col-4">{{ option.title }}</h4>
+      <p>{{ option.category }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-8 p-4">
+      <div class="row">
+        <h2>Great! You choose 2 volunteer opportunities.</h2>
+        <p>Tell us how we may contact you. All fields required.</p>
+      </div>
+      <form (ngSubmit)="onSubmit()" #volunteerForm="ngForm">
+        <div class="row">
+          <div class="form-group col">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              [(ngModel)]="model.firstName"
+              name="firstName"
+              #firstName="ngModel"
+            />
+          </div>
+          <div class="form-group col">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              [(ngModel)]="model.lastName"
+              name="lastName"
+              #lastName="ngModel"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              class="form-control"
+              id="phone"
+              [(ngModel)]="model.phone"
+              name="phone"
+              #phone="ngModel"
+            />
+          </div>
+          <div class="form-group col">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              [(ngModel)]="model.email"
+              name="email"
+              #email="ngModel"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col">
+            <label for="state">State</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="state"
+              [(ngModel)]="model.state"
+              name="state"
+              #state="ngModel"
+            >
+              <option *ngFor="let st of stateList" value="{{ st.value }}">
+                {{ st.name }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="zipCode">Zip Code</label>
+            <input
+              type="text"
+              class="form-control"
+              id="zipCode"
+              [(ngModel)]="model.zipCode"
+              name="zipCode"
+              #zipCode="ngModel"
+            />
+          </div>
+        </div>
+        <button class="btn btn-danger" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -14,7 +15,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { EventsComponent } from "./events/events.component";
 import { HeroComponent } from "./front-page/hero/hero.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { ModalModule } from 'ngx-bootstrap/modal';
+import { ModalModule } from "ngx-bootstrap/modal";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,13 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     EventsComponent,
     HeroComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, ModalModule.forRoot()],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ModalModule.forRoot(),
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
