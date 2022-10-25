@@ -2,11 +2,13 @@
   <h1>News &amp; Events</h1>
   <div class="events">
     <div class="event" *ngFor="let event of newsEvents">
-      <img
-        src="../../assets/images/{{ event.icon }}.svg"
-        alt="{{ event.icon }} Icon"
-        class="event__icon"
-      />
+      <div class="event__img">
+        <img
+          src="../../assets/images/{{ event.icon }}.svg"
+          alt="{{ event.icon }} Icon"
+          class="event__icon"
+        />
+      </div>
       <div class="text">
         <h2 class="event__title">{{ event.title }}</h2>
         <div class="event__date-time">{{ event.date }} • {{ event.time }}</div>

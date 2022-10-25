@@ -20,6 +20,7 @@ h1 {
   color: $red;
   width: 400px;
   padding: 1rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,6 +28,12 @@ h1 {
   @media (max-width: 768px) {
     grid-column: 1 / -1;
     margin: 0 auto;
+  }
+  &__img {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__icon {
     width: 80px;

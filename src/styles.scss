@@ -87,10 +87,10 @@ h6 {
 
 .btn {
   display: block;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 2rem !important;
   // border-radius: 6px;
   background-color: transparent;
-  border: 1px solid;
+  border: 1px solid !important;
   width: 100%;
   margin: 1.5rem 0;
   text-decoration: none;
@@ -102,7 +102,7 @@ h6 {
 
     &:hover {
       background-color: $green;
-      color: #fff;
+      color: #fff !important;
     }
   }
   &__orange {
@@ -111,7 +111,7 @@ h6 {
 
     &:hover {
       background-color: $orange;
-      color: #fff;
+      color: #fff !important;
     }
   }
   &__purple {
@@ -120,7 +120,7 @@ h6 {
 
     &:hover {
       background-color: $purple;
-      color: #fff;
+      color: #fff !important;
     }
   }
 }
