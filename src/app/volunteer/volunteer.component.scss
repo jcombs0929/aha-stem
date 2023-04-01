@@ -9,6 +9,10 @@
   margin-bottom: 1rem;
 }
 
+.card > * {
+  transition: all 0.3s ease;
+}
+
 .card-text {
   font-size: 14px;
   padding: 4px 8px;
@@ -21,6 +25,8 @@
   text-decoration: none;
 
   .card:hover {
-    border: 1px solid $red;
+    img {
+      opacity: 0.8;
+    }
   }
 }

@@ -11,15 +11,30 @@ export class VolunteerComponent implements OnInit {
   volunteer: Volunteer;
   model = new Volunteer();
   volunteerOptions = [
-    { id: 1, title: "Science Tutor", category: ["Science"], image: "science-tutor.jpg" },
-    { id: 2, title: "Tech Mentor", category: ["Technology"], image: "tech-mentor.jpg" },
+    {
+      id: 1,
+      title: "Science Tutor",
+      category: ["Science"],
+      image: "science-tutor.jpg",
+    },
+    {
+      id: 2,
+      title: "Tech Mentor",
+      category: ["Technology"],
+      image: "tech-mentor.jpg",
+    },
     {
       id: 3,
       title: "Engineering Mentor",
       category: ["Engineering"],
       image: "engineering-mentor.jpg",
     },
-    { id: 4, title: "Math Tutor", category: ["Mathmatics"], image: "img-1.jpg" },
+    {
+      id: 4,
+      title: "Math Tutor",
+      category: ["Mathmatics"],
+      image: "math-tutor.jpg",
+    },
     {
       id: 5,
       title: "STEM Mentor",

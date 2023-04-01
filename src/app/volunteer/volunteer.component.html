@@ -23,15 +23,24 @@
   <div class="row volunteer-options">
     <div class="col-4 mb-4" *ngFor="let option of volunteerOptions">
       <a href="" class="card-link">
-      <div class="card w-100" style="width: 18rem">
-        <img src="../assets/images/{{option.image}}" class="card-img-top" alt="option.title" />
-        <div class="card-body">
-          <h4 class="card-title d-flex">{{ option.title }}</h4>
-          <div class="d-flex flex-wrap">
-            <div class="card-text mb-2 me-2" *ngFor="let cat of option.category">{{ cat }}</div>
+        <div class="card w-100" style="width: 18rem">
+          <img
+            src="../assets/images/{{ option.image }}"
+            class="card-img-top"
+            alt="option.title"
+          />
+          <div class="card-body">
+            <h4 class="card-title d-flex">{{ option.title }}</h4>
+            <div class="d-flex flex-wrap">
+              <div
+                class="card-text mb-2 me-2"
+                *ngFor="let cat of option.category"
+              >
+                {{ cat }}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </a>
     </div>
   </div>
