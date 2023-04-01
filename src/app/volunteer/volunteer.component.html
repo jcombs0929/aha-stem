@@ -33,8 +33,19 @@
             <h4 class="card-title d-flex">{{ option.title }}</h4>
             <div class="d-flex flex-wrap">
               <div
-                class="card-text mb-2 me-2"
+                class="card-text mb-2 me-2 category"
                 *ngFor="let cat of option.category"
+                [ngClass]="
+                  cat === 'Technology'
+                    ? 'green'
+                    : cat === 'Science'
+                    ? 'orange'
+                    : cat === 'Engineering'
+                    ? 'purple'
+                    : cat === 'Mathmatics'
+                    ? 'blue'
+                    : 'red'
+                "
               >
                 {{ cat }}
               </div>
@@ -49,8 +60,8 @@
     <div class="col"></div>
     <div class="col-8 p-4">
       <div class="row">
-        <h2>Great! You choose 2 volunteer opportunities.</h2>
-        <p>Tell us how we may contact you. All fields required.</p>
+        <h2>Great! You chose 2 volunteer opportunities.</h2>
+        <p>Tell us how we may contact you. (All fields are required).</p>
       </div>
       <form (ngSubmit)="onSubmit()" #volunteerForm="ngForm">
         <div class="row">

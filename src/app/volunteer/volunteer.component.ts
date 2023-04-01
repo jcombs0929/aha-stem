@@ -117,5 +117,13 @@ export class VolunteerComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  getCategoryStyle(c: any) {
+    if (c === "Technology") {
+      return "$green";
+    } else {
+      return "$red";
+    }
+  }
+
   onSubmit() {}
 }

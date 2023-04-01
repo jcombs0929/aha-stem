@@ -13,8 +13,12 @@
   transition: all 0.3s ease;
 }
 
+.card-title {
+  color: $black;
+}
+
 .card-text {
-  font-size: 14px;
+  font-size: 12px;
   padding: 4px 8px;
   border: 1px solid $red;
   border-radius: 16px;
@@ -29,4 +33,30 @@
       opacity: 0.8;
     }
   }
+}
+
+.category {
+  color: #fff;
+  font-weight: 600;
+}
+
+.green {
+  background-color: $green;
+  border-color: $green;
+}
+.orange {
+  background-color: $orange;
+  border-color: $orange;
+}
+.purple {
+  background-color: $purple;
+  border-color: $purple;
+}
+.blue {
+  background-color: $blue;
+  border-color: $blue;
+}
+.red {
+  background-color: $red;
+  border-color: $red;
 }
