@@ -1,7 +1,11 @@
+<div class="container-fluid d-flex align-items-center">
+  <div class="container d-flex align-items-center">
+    <h1 class="">Volunteer Opportunities for Everyone</h1>
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <div class="header col-md-8 mb-3">
-      <h1>Volunteer Opportunities for Everyone</h1>
       <p>
         The STEM Goes Red North Texas depends on the time and talent of
         volunteers to help us create a better future by nurturing the bright
@@ -17,9 +21,18 @@
   </div>
 
   <div class="row volunteer-options">
-    <div class="col-4" *ngFor="let option of volunteerOptions">
-      <h4 class="col-4">{{ option.title }}</h4>
-      <p>{{ option.category }}</p>
+    <div class="col-4 mb-4" *ngFor="let option of volunteerOptions">
+      <a href="" class="card-link">
+      <div class="card w-100" style="width: 18rem">
+        <img src="../assets/images/{{option.image}}" class="card-img-top" alt="option.title" />
+        <div class="card-body">
+          <h4 class="card-title d-flex">{{ option.title }}</h4>
+          <div class="d-flex flex-wrap">
+            <div class="card-text mb-2 me-2" *ngFor="let cat of option.category">{{ cat }}</div>
+          </div>
+        </div>
+      </div>
+      </a>
     </div>
   </div>
 

@@ -1,3 +1,26 @@
+@import "../../sass/mixins";
+
+.container-fluid {
+  height: 250px;
+  background-color: $red;
+  color: #fff;
+}
 .row {
   margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 14px;
+  padding: 4px 8px;
+  border: 1px solid $red;
+  border-radius: 16px;
+  color: $red;
+}
+
+.card-link {
+  text-decoration: none;
+
+  .card:hover {
+    border: 1px solid $red;
+  }
 }
